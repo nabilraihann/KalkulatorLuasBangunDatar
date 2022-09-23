@@ -37,9 +37,17 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
         }
         switch (v.getId()) {
             case R.id.btn_persegi_panjang:
-                Intent gantiSlide = new Intent(MenuActivity.this, PersegiActivity.class);
+                Intent gantiSlide = new Intent(MenuActivity.this, PersegiPanjangActivity.class);
 
-                startActivity((gantiSlide));
+                startActivity(gantiSlide);
+
+                break;
+        }
+        switch (v.getId()) {
+            case R.id.btn_segitiga:
+                Intent gantiSlide = new Intent(MenuActivity.this, SegitigaActivity.class);
+
+                startActivity(gantiSlide);
 
                 break;
         }
