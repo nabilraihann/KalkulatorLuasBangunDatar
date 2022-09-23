@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:padding="30dp"
     tools:context=".PersegiActivity">
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="200dp"
-        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
         android:contentDescription="gambar persegi"
         android:src="@drawable/persegi" />
 
@@ -60,16 +62,26 @@
     </LinearLayout>
 
     <TextView
+        android:id="@+id/ket_luas_persegi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Luas persegi adalah:"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
         android:id="@+id/tv_hasil_persegi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/box2"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/hasil_bg"
+        android:hint="Hasil"
         android:paddingVertical="10dp"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold" />
 
-</RelativeLayout>
+</LinearLayout>
